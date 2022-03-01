@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# This project is a minimal mock project of reddit
+
+Resources used includes:
+
+* This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+* [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+* [React boostrap](https://react-bootstrap.github.io/getting-started/introduction)
 
 ## Available Scripts
 
