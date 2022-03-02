@@ -6,8 +6,8 @@ const NavBar = () => {
   const [search, setSearch] = useState("");
 
   return (
-      <>
-    <Navbar bg="dark" variant="dark">
+      
+    <Navbar bg="dark" variant="dark" className="mb-3">
       <Container>
         <Navbar.Brand href="">
           <FcReddit style={{fontSize: "2rem"}} /> {" "}
@@ -25,8 +25,7 @@ const NavBar = () => {
         </Form>
       </Container>
     </Navbar>
-    <p>search: {search}</p>
-    </>
+   
   );
 };
 
