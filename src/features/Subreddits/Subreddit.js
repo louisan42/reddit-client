@@ -5,7 +5,10 @@ import React from "react";
 
 const Subreddit =() => {
     return (
-        <h2>Subreddits</h2>
+        <article className="bg-white shadow p-4 rounded w-100">
+            <h3>Subreddits</h3>
+        </article>
+        
     )
 }
 

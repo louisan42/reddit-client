@@ -5,20 +5,24 @@ import{BsArrowUpCircle,BsArrowDownCircle} from "react-icons/bs"
 
 const ContentTile = () => {
   return (
-    <Row>
-      <Col style={{fontSize: "2rem"}} md={1}>
+    <Row className="bg-white shadow rounded mb-4 p-3">
+      <Col style={{fontSize: "1.5rem"}} xs={1}>
         <div>
         <BsArrowUpCircle />
         </div>
         <BsArrowDownCircle />
       </Col>
       <Col>
-      <Card className="rounded mb-3">
+      <Card border = "0" className="">
         <Card.Body>
           <Card.Title>Special title treatment</Card.Title>
-          <Card.Img variant="bottom" src={logo} className="App-logo"/>
+          <Card.Img variant="bottom" src={logo} className="App-logo"/><hr />
+          <Card.Text className="text-muted d-flex justify-content-between">
+              <span className="text-start">Name</span>
+              <span className="text-center mx-auto">Time posted</span>
+              <span className="text-end">comments</span>
+          </Card.Text>
         </Card.Body>
-        <Card.Footer className="text-muted">2 days ago</Card.Footer>
       </Card>
       </Col>
     </Row>
