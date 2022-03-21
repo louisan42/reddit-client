@@ -19,6 +19,7 @@ const NavBar = () => {
             placeholder="Search"
             className="me-2"
             aria-label="Search"
+            value={search}
             onChange={e=> setSearch(e.target.value)}
           />
           <FcSearch style={{"fontSize": "2rem"}}/>
