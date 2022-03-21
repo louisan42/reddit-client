@@ -1,12 +1,23 @@
-import React from 'react';
-import NavBar from './features/NavBar/NavBar';
+import React,{lazy,Suspense,useState} from 'react';
 import './App.css';
-import { Col, Container, Row } from 'react-bootstrap';
-import Subreddit from './features/Subreddits/Subreddit';
-import Contents from './features/contents/Contents';
+import { Col, Container, Row,Spinner } from 'react-bootstrap';
 
+const NavBar = lazy(()=> import ('./features/NavBar/NavBar'));
+const Subreddit = lazy(()=> import('./features/Subreddits/Subreddit'));
+const Contents = lazy(()=> import('./features/contents/Contents'));
+
+
+
+const style = { position: "fixed", top: "50%", left: "50%" };
 function App() {
+
+  const componentLoader =()=> <Spinner animation="border" role="status" style={style}>
+  <span className="visually-hidden">Loading</span>
+</Spinner>
+
+
   return (
+    <Suspense fallback={componentLoader()}>
     <>
       <NavBar />
       <Container>
@@ -22,6 +33,7 @@ function App() {
 
       </Container>
     </>
+    </Suspense>
   );
 }
 

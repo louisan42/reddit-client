@@ -7,6 +7,22 @@
 body {
   background-color:#f3f3f3;
 }
+a.list-group-item.list-group-item-action.active{
+  border-left: 4px solid #3d5af1!important;
+  background-color: rgba(61,90,241,0.25) !important;
+  color: #3d5af1 !important;
+
+}
+
+div.bg-white.shadow.rounded.row >div.col-1 button{
+  background-color: inherit!important;
+  border: 0px;
+  padding-top: 0;
+  font-size: 1.1rem;
+}
+div.bg-white.shadow.rounded.row >div.col-1 button:hover{
+  transform: scale(1.5,1.5);
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

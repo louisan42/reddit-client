@@ -21,7 +21,7 @@ const NavBar = () => {
             aria-label="Search"
             onChange={e=> setSearch(e.target.value)}
           />
-          <FcSearch style={{"font-size": "2rem"}}/>
+          <FcSearch style={{"fontSize": "2rem"}}/>
         </Form>
       </Container>
     </Navbar>
